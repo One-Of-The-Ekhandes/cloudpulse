@@ -5,7 +5,7 @@
 A high-performance, zero-dependency security monitoring dashboard built with Vue 3 Composition API and TypeScript. Every component — SVG charts, virtual scrolling, theme engine, keyboard shortcuts — is hand-crafted with no external libraries beyond Vue itself.
 
 ![Vue 3](https://img.shields.io/badge/Vue-3.5-42b883?logo=vue.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?logo=typescript)
+![TypeScript](https://img.shields.io/badge/TypeScript-6.x-3178c6?logo=typescript)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-green)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
@@ -94,7 +94,7 @@ src/
 | **SVG over Canvas** | Declarative, reactive, accessible — integrates naturally with Vue's template system |
 | **Virtual scrolling** | Proves awareness of performance at scale — critical for monitoring dashboards |
 | **CSS custom properties for theming** | Single source of truth, instant switches, zero JS recomputation |
-| **TypeScript discriminated unions** | Type-safe event handling without runtime overhead |
+| **TypeScript string literal union types** | Type-safe severities and categories with no runtime overhead |
 
 ---
 
@@ -141,7 +141,7 @@ The `ThreatChart` component computes stacked area paths by iterating severity la
 ## 📋 Tech Stack
 
 - **Vue 3.5** — Composition API with `<script setup>`
-- **TypeScript 5.x** — Strict mode, generics, discriminated unions
+- **TypeScript 6.x** — Strict mode, generics, union types
 - **Vite** — Build tooling only
 - **Pure CSS** — Custom properties, animations, responsive grid
 - **SVG** — Charts, gauges, network map — all declarative

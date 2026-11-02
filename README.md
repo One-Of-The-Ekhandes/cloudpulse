@@ -4,6 +4,7 @@
 
 A high-performance, zero-dependency security monitoring dashboard built with Vue 3 Composition API and TypeScript. Every component — SVG charts, virtual scrolling, theme engine, keyboard shortcuts — is hand-crafted with no external libraries beyond Vue itself.
 
+[![CI](https://github.com/One-Of-The-Ekhandes/cloudpulse/actions/workflows/ci.yml/badge.svg)](https://github.com/One-Of-The-Ekhandes/cloudpulse/actions/workflows/ci.yml)
 ![Vue 3](https://img.shields.io/badge/Vue-3.5-42b883?logo=vue.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6.x-3178c6?logo=typescript)
 ![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-green)

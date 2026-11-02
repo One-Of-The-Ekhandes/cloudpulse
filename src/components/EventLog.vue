@@ -47,6 +47,11 @@ const { containerRef, totalHeight, visibleItems, onScroll } =
     overscan: 8,
   });
 
+// Function ref: hands the scroll container element to the virtual-scroll composable.
+function setContainer(el: unknown) {
+  containerRef.value = el instanceof HTMLElement ? el : null;
+}
+
 function toggleSeverity(s: Severity) {
   const next = new Set(filter.value.severities);
   if (next.has(s)) next.delete(s);
@@ -135,7 +140,7 @@ watch(
 
     <!-- Virtual scroll container -->
     <div
-      ref="containerRef"
+      :ref="setContainer"
       class="scroll-container"
       :style="{ height: CONTAINER_HEIGHT + 'px' }"
       @scroll="onScroll"

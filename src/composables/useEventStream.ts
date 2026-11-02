@@ -3,7 +3,7 @@
  *
  * Generates realistic cloud security events at configurable intervals,
  * maintaining a rolling window of threat metrics for charting.
- * Uses a seeded PRNG for deterministic event generation in tests.
+ * Events are randomised with Math.random(), so each session shows a different stream.
  */
 import { ref, computed, onUnmounted, type Ref } from 'vue';
 import type { SecurityEvent, Severity, EventCategory, ThreatMetric } from '../types';
